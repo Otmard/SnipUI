@@ -1,8 +1,20 @@
 {
   "name": "snipui",
   "displayName": "SnipUI",
-  "description": "",
+  "description": "Extensión de snippets de PrimeNG",
   "version": "0.0.1",
+  "publisher": "otmard",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Otmard/SnipUI.git"
+  },
+  "keywords": [
+    "snippets",
+    "PrimeNG",
+    "typescript",
+    "programming",
+    "development"
+  ],
   "engines": {
     "vscode": "^1.94.0"
   },

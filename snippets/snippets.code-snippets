@@ -32,8 +32,185 @@
 	"p-button-severity": {
 		"prefix": "p-button-severity",
 		"body": [
-			"<p-button label=\"${1:label}\" severity=\"${2}\" />"
+			"<p-button label=\"${1:label}\" severity=\"${2|primary,secondary,success,info,warning,help,danger,contrast|}\" />"
 		],
 		"description": "PrimeNG button with severity options"
+	},
+	// Disabled Button
+	"Disabled Button": {
+		"prefix": "btnDisabled",
+		"body": "<p-button label=\"Submit\" [disabled]=\"true\" />",
+		"description": "Disabled button"
+	},
+
+	// Raised Button
+	"Raised Button Severity": {
+		"prefix": "btnRaisedSeverity",
+		"body": "<p-button label=\"Button\" [raised]=\"true\" severity=\"${2|primary,secondary,success,info,warning,help,danger,contrast|}\" />",
+		"description": "Raised button with severity"
+	},
+
+	// Rounded Button
+	"Rounded Button Severity": {
+		"prefix": "btnRoundedSeverity",
+		"body": "<p-button label=\"Button\" [rounded]=\"true\" severity=\"${2|primary,secondary,success,info,warning,help,danger,contrast|}\" />",
+		"description": "Rounded button with severity"
+	},
+
+	// Text Button
+	"Text Button Severity": {
+		"prefix": "btnTextSeverity",
+		"body": "<p-button label=\"Button\" [text]=\"true\" severity=\"${2|primary,secondary,success,info,warning,help,danger,contrast|}\" />",
+		"description": "Text button with severity"
+	},
+
+	// Raised Text Button
+	"Raised Text Button Severity": {
+		"prefix": "btnRaisedTextSeverity",
+		"body": "<p-button label=\"Button\" [text]=\"true\" [raised]=\"true\" severity=\"${2|primary,secondary,success,info,warning,help,danger,contrast|}\" />",
+		"description": "Raised text button with severity"
+	},
+
+	// Outlined Button
+	"Outlined Button Severity": {
+		"prefix": "btnOutlinedSeverity",
+		"body": "<p-button label=\"Button\" [outlined]=\"true\" severity=\"${2|primary,secondary,success,info,warning,help,danger,contrast|}\" />",
+		"description": "Outlined button with severity"
+	},
+	// ===============Inputs Text================
+	// Basic Input
+	"Basic Input": {
+		"prefix": "inputBasic",
+		"body": "<input type=\"text\" pInputText [(ngModel)]=\"value\" />",
+		"description": "Basic InputText with ngModel"
+	},
+
+	// Reactive Forms Input
+	"Reactive Forms Input": {
+		"prefix": "inputReactive",
+		"body": "<input type=\"text\" pInputText formControlName=\"${1:text}\" />",
+		"description": "InputText for Reactive Forms"
+	},
+
+	// Help Text Input
+	"Help Text Input": {
+		"prefix": "inputHelp",
+		"body": "<div class=\"flex flex-column gap-2\">\n    <label for=\"username\">Username</label>\n    <input pInputText id=\"username\" aria-describedby=\"username-help\" [(ngModel)]=\"value\" />\n    <small id=\"username-help\">Enter your username to reset your password.</small>\n</div>",
+		"description": "InputText with help text"
+	},
+
+	// Float Label Input
+	"Float Label Input": {
+		"prefix": "inputFloatLabel",
+		"body": "<p-floatLabel>\n    <input pInputText id=\"username\" [(ngModel)]=\"value\" />\n    <label for=\"username\">Username</label>\n</p-floatLabel>",
+		"description": "InputText with floating label"
+	},
+
+	// Filled Input
+	"Filled Input": {
+		"prefix": "inputFilled",
+		"body": "<input type=\"text\" pInputText [(ngModel)]=\"value\" variant=\"filled\" />",
+		"description": "Filled InputText"
+	},
+	//==============Text Area================
+	// Basic Textarea
+	"Basic Textarea": {
+		"prefix": "textareaBasic",
+		"body": "<textarea rows=\"5\" cols=\"30\" pInputTextarea [(ngModel)]=\"value\"></textarea>",
+		"description": "Basic InputTextarea with ngModel"
+	},
+
+	// Reactive Forms Textarea
+	"Reactive Forms Textarea": {
+		"prefix": "textareaReactive",
+		"body": "<form [formGroup]=\"formGroup\">\n    <textarea rows=\"5\" cols=\"30\" pInputTextarea formControlName=\"${1:text}\"></textarea>\n</form>",
+		"description": "InputTextarea for Reactive Forms"
+	},
+
+	// Auto Resize Textarea
+	"Auto Resize Textarea": {
+		"prefix": "textareaAutoResize",
+		"body": "<textarea rows=\"5\" cols=\"30\" pInputTextarea [autoResize]=\"true\"></textarea>",
+		"description": "InputTextarea with autoResize"
+	},
+
+	// Float Label Textarea
+	"Float Label Textarea": {
+		"prefix": "textareaFloatLabel",
+		"body": "<p-floatLabel>\n    <textarea id=\"float-input\" rows=\"5\" cols=\"30\" pInputTextarea></textarea>\n    <label for=\"float-input\">Summary</label>\n</p-floatLabel>",
+		"description": "InputTextarea with floating label"
+	},
+
+	// Filled Textarea
+	"Filled Textarea": {
+		"prefix": "textareaFilled",
+		"body": "<textarea variant=\"filled\" rows=\"5\" cols=\"30\" pInputTextarea [(ngModel)]=\"value\"></textarea>",
+		"description": "Filled InputTextarea"
+	},
+
+	//============Inputs Number================
+	"Input Number - Integer Only": {
+		"prefix": "input-integeronly",
+		"body": [
+			"<p-inputNumber",
+			"    inputId=\"integeronly\"",
+			"    [(ngModel)]=\"${1:value}\" />"
+		],
+		"description": "InputNumber with integer only"
+	},
+	"Input Number - Without Grouping": {
+		"prefix": "input-withoutgrouping",
+		"body": [
+			"<p-inputNumber",
+			"    [(ngModel)]=\"${1:value}\"",
+			"    mode=\"decimal\"",
+			"    inputId=\"withoutgrouping\"",
+			"    [useGrouping]=\"false\" />"
+		],
+		"description": "InputNumber without grouping"
+	},
+	"Input Number - Min-Max Fraction": {
+		"prefix": "input-minmaxfraction",
+		"body": [
+			"<p-inputNumber",
+			"    [(ngModel)]=\"${1:value}\"",
+			"    inputId=\"minmaxfraction\"",
+			"    mode=\"decimal\"",
+			"    [minFractionDigits]=\"2\"",
+			"    [maxFractionDigits]=\"5\" />"
+		],
+		"description": "InputNumber with min-max fraction digits"
+	},
+	"Input Number - Min-Max": {
+		"prefix": "input-minmax",
+		"body": [
+			"<p-inputNumber",
+			"    [(ngModel)]=\"${1:value}\"",
+			"    inputId=\"minmax\"",
+			"    mode=\"decimal\"",
+			"    [min]=\"0\"",
+			"    [max]=\"100\" />"
+		],
+		"description": "InputNumber with min and max boundaries"
+	},
+	"Input Number - Dynamic Prefix and Suffix": {
+		"prefix": "input-dynamic-prefix-suffix",
+		"body": [
+			"<p-inputNumber",
+			"    [(ngModel)]=\"${1:value}\"",
+			"    prefix=\"${2}\"",
+			"    suffix=\"${3}\" />"
+		],
+		"description": "InputNumber with dynamic prefix and suffix"
+	},
+	"Input Number - Float Label": {
+		"prefix": "input-float-label",
+		"body": [
+			"<p-floatLabel>",
+			"    <p-inputNumber inputId=\"${1:inputId}\" [(ngModel)]=\"${2:value}\" />",
+			"    <label for=\"${1:inputId}\">${3:Label}</label>",
+			"</p-floatLabel>"
+		],
+		"description": "InputNumber within a Float Label"
 	}
 }
