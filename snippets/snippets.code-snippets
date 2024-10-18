@@ -1,0 +1,39 @@
+{
+	"p-button-basic": {
+		"prefix": "p-button-basic",
+		"body": ["<p-button label=\"${1:Submit}\" />"],
+		"description": "Basic PrimeNG button"
+	},
+	"p-button-icon": {
+		"prefix": "p-button-icon",
+		"body": [
+			"<p-button label=\"${1:Submit}\" icon=\"pi pi-${2:check}\" iconPos=\"${3|left,top,right,bottom|}\" />"
+		],
+		"description": ["PrimeNG button with icon"]
+	},
+	"p-button-loading": {
+		"prefix": "p-button-loading",
+		"body": [
+			"<p-button label=\"${1:Search}\" [loading]=\"${3:loading}\" (onClick)=\"${4:load}()\" />"
+		],
+		"description": [
+			"PrimeNG button with loading state",
+			"loading: boolean = false;",
+			"",
+			"load() {",
+			"    this.loading = true;",
+			"",
+			"    setTimeout(() => {",
+			"        this.loading = false;",
+			"    }, 2000);",
+			"}"
+		]
+	},
+	"p-button-severity": {
+		"prefix": "p-button-severity",
+		"body": [
+			"<p-button label=\"${1:label}\" severity=\"${2|primary,secondary,success,info,warning,help,danger,contrast|}\" />"
+		],
+		"description": "PrimeNG button with severity options"
+	}
+}
