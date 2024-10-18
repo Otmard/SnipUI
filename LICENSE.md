@@ -1,5 +1,6 @@
+# License
 
-MIT License
+## MIT License
 
 Copyright (c) 2024 Otmar
 
@@ -20,3 +21,15 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+## PrimeNG Documentation
+
+This extension utilizes snippets and examples based on the PrimeNG documentation. The PrimeNG library is open-source and licensed under the MIT License. You can find the official documentation [here](https://www.primefaces.org/primeng/showcase/#/).
+
+## Disclaimer
+
+This extension is not officially associated with or endorsed by PrimeNG. The snippets and examples included in this extension are provided for convenience and educational purposes. Users are encouraged to refer to the official PrimeNG documentation for detailed information and guidance.
+
+## Acknowledgments
+
+- PrimeNG team for the excellent library and documentation.
