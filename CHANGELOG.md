@@ -1,8 +1,6 @@
 # Change Log
 
-All notable changes to the "primeflex-snippets" extension will be documented in this file.
-
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+All notable changes to the "SnipUI" extension will be documented in this file.
 
 ## [Unreleased]
 

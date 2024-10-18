@@ -32,7 +32,7 @@
 	"p-button-severity": {
 		"prefix": "p-button-severity",
 		"body": [
-			"<p-button label=\"${1:label}\" severity=\"${2|primary,secondary,success,info,warning,help,danger,contrast|}\" />"
+			"<p-button label=\"${1:label}\" severity=\"${2}\" />"
 		],
 		"description": "PrimeNG button with severity options"
 	}

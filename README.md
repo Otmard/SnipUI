@@ -1,44 +1,75 @@
-# PrimeFlex Snippets
 
-This Visual Studio Code extension provides a collection of useful snippets for PrimeFlex, making it easier and faster to integrate responsive and utility-first CSS classes into your projects.
+# SnipUI
+
+**SnipUI** is a collection of code snippets designed to streamline the development process when using Angular UI components. It simplifies the integration and usage of various UI elements, enhancing productivity by providing quick access to commonly used components.
 
 ## Features
 
-- **PrimeFlex Utilities**: Quickly insert commonly used PrimeFlex classes for grid, spacing, display, alignment, and more.
-- **Responsive Design**: Includes snippets for responsive breakpoints, helping you create mobile-friendly designs with ease.
-- **Easy to Use**: Just type the shortcode for the PrimeFlex utility class you need, and the snippet will auto-complete.
-  
+- Snippets for commonly used Angular UI components.
+- Supports directives, attributes, and customization options.
+- Intuitive and easy-to-use structure for quick implementation.
+- Compatible with a variety of Angular projects, focusing on fast development workflows.
+
+## Snippets
+
+Some key snippets provided by SnipUI:
+
+### Button
+
+```html
+<p-button label="Submit" severity="primary" />
+```
+
+### Icon Button
+
+```html
+<p-button icon="pi pi-check" label="Confirm" iconPos="right" />
+```
+
+### Loading Button
+
+```html
+<p-button label="Search" icon="pi pi-search" [loading]="loading" (onClick)="load()" />
+
+```
+
+### Severity Buttons
+
+```html
+<p-button label="Primary" severity="primary" />
+<p-button label="Secondary" severity="secondary" />
+<p-button label="Success" severity="success" />
+<p-button label="Danger" severity="danger" />
+```
+
+And many more components, including icon-only buttons, text buttons, raised buttons, outlined buttons, and more.
+
 ## Installation
 
-1. Open VS Code.
-2. Go to the Extensions view by clicking on the Extensions icon in the Activity Bar.
-3. Search for `PrimeFlex Snippets`.
-4. Click **Install**.
+1. Open your code editor (VS Code or any other editor that supports extensions).
+2. Search for **SnipUI** in the extensions marketplace.
+3. Click on "Install" and enjoy faster Angular UI component development!
 
-Alternatively, you can install it from the [Visual Studio Code Marketplace](#).
+## Usage
 
-## How to Use
+After installing the extension:
 
-Simply type a keyword related to PrimeFlex, and you'll see the available snippets. For example:
-
-- `pf-grid` → Inserts a basic PrimeFlex grid container.
-- `pf-col-6` → Creates a column that spans 6 units in a 12-column grid.
-- `pf-mt-2` → Adds a top margin using PrimeFlex spacing utilities.
-
-## Snippet Prefixes
-
-| Prefix    | Description                         |
-|-----------|-------------------------------------|
-| `pf-grid` | Insert PrimeFlex grid container     |
-| `pf-col`  | Insert column with specific width   |
-| `pf-m`    | Insert margin utility               |
-| `pf-p`    | Insert padding utility              |
-| `pf-d`    | Insert display utility              |
+1. Open an Angular project.
+2. In your editor, start typing the desired snippet prefix (e.g., `p-button` for a PrimeNG button component).
+3. Select the snippet from the suggestion list and customize the attributes as needed.
 
 ## Contributing
 
-Feel free to contribute to this project by opening issues or submitting pull requests. If you have suggestions for additional snippets, let me know!
+Contributions are welcome! If you'd like to contribute, please feel free to fork the repository and submit a pull request with any improvements or new snippets.
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
+
+---
+
+### Disclaimer
+
+**This extension is not affiliated, associated, authorized, endorsed by, or in any way officially connected with PrimeNG or its parent company.** All product and company names are trademarks™ or registered® trademarks of their respective holders. The use of these names, trademarks, and brands is for identification purposes only and does not imply endorsement.
+
+For official documentation and support related to PrimeNG, please refer to their [official website](https://primefaces.org/primeng/).
